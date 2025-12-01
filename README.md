@@ -2,9 +2,8 @@
 
 A modern, beautiful Flutter application for a coffee shop with advanced API integration, featuring authentication, shopping cart, favorites, order management, and **full dark mode support**.
 
-![Flutter](https://img.shields.io/badge/Flutter-3.9.2+-02569B?logo=flutter)
-![Dart](https://img.shields.io/badge/Dart-3.9.2+-0175C2?logo=dart)
-![License](https://img.shields.io/badge/License-MIT-green)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
 
 ## ✨ Features
 
@@ -44,82 +43,6 @@ A modern, beautiful Flutter application for a coffee shop with advanced API inte
 - Easy on the eyes
 - Consistent design language
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Flutter SDK (3.9.2 or higher)
-- Dart SDK (3.9.2 or higher)
-- Android Studio / VS Code with Flutter extensions
-- iOS Simulator / Android Emulator or physical device
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/coffee-shop-flutter.git
-   cd coffee-shop-flutter
-   ```
-
-2. **Install dependencies**
-   ```bash
-   flutter pub get
-   ```
-
-3. **Run the app**
-   ```bash
-   flutter run
-   ```
-
-### Build for Production
-
-**Android:**
-```bash
-flutter build apk --release
-```
-
-**iOS:**
-```bash
-flutter build ios --release
-```
-
-**Web:**
-```bash
-flutter build web --release
-```
-
-## 📁 Project Structure
-
-```
-lib/
-├── auth/                    # Authentication pages
-│   ├── login_page.dart
-│   ├── sign_up_page.dart
-│   └── edit_profile_page.dart
-├── models/                  # Data models
-│   ├── coffee_item.dart
-│   ├── cart_item.dart
-│   └── order.dart
-├── services/                # API and business logic
-│   └── api_service.dart
-├── widgets/                 # Reusable widgets
-│   ├── cart_item_widget.dart
-│   ├── cart_summary_widget.dart
-│   └── profile/
-│       ├── header_card.dart
-│       ├── stat_card.dart
-│       └── order_tile.dart
-├── main.dart                # App entry point
-├── myhome.dart              # Home page
-├── cart.dart                # Shopping cart
-├── checkout.dart            # Checkout page
-├── favorite.dart            # Favorites page
-├── profile.dart             # User profile
-├── menu.dart                # Navigation drawer
-├── payment_page.dart        # Payment page
-├── order_confirmation_page.dart
-└── theme.dart               # App theme (light & dark)
-```
 
 ## 🎨 Theme & Dark Mode
 
@@ -151,34 +74,6 @@ The app uses an advanced API service layer (`lib/services/api_service.dart`) tha
 - **Mock Data Fallback** - Falls back to mock data when API is unavailable
 - **JSON Serialization** - Automatic JSON parsing and model conversion
 - **Timeout Handling** - Request timeouts to prevent hanging requests
-
-### API Endpoints
-
-The app is configured to work with the following endpoints:
-
-- `GET /api/v1/coffee/items` - Fetch all coffee items
-- `GET /api/v1/coffee/items?category={category}` - Fetch items by category
-- `POST /api/v1/orders` - Place a new order
-- `GET /api/v1/orders/user/{userId}` - Get user orders
-
-### Configuration
-
-To use a real API, update the `baseUrl` in `lib/services/api_service.dart`:
-
-```dart
-static const String baseUrl = 'https://your-api-url.com/api/v1';
-static const bool useMockData = false; // Set to false to use real API
-```
-
-### Mock Data Mode
-
-By default, the app runs in mock data mode for development. The API service simulates network delays and returns mock data. This allows you to:
-
-- Develop and test without a backend
-- See how the app handles loading states
-- Test error scenarios
-
-To switch to real API mode, set `useMockData = false` in `api_service.dart`.
 
 ## 📦 Dependencies
 
@@ -263,23 +158,11 @@ The app handles various error scenarios:
 - [ ] Add order tracking with maps
 - [ ] Implement push notifications for order updates
 
-## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 👨‍💻 Author
 
-Your Name - [Your GitHub](https://github.com/yourusername)
+Kanizadev - [Your GitHub](https://github.com/kanizadev)
 
 ## 🙏 Acknowledgments
 
